@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registreren</title>
+  <style>
+    body {
+      background-color: #1b2838;
+      color: #c7d5e0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .register-form {
+      background-color: #2a475e;
+      padding: 20px;
+      border-radius: 5px;
+      width: 300px;
+      text-align: center;
+    }
+
+    .register-form input {
+      width: calc(100% - 20px);
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .register-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4a5a6a;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .register-form button:hover {
+      background-color: #c7d5e0;
+      color: #1b2838;
+    }
+  </style>
+</head>
+<body>
+<form class="register-form" action="connect.php" method="POST">
+  <h2>Maak een nieuw account aan</h2>
+  <input type="text" name="firstName" placeholder="Voornaam" required>
+  <input type="text" name="lastName" placeholder="Achternaam" required>
+
+  <div class="form-group">
+    <label for="gender">Geslacht</label>
+    <div>
+      <label for="male"><input type="radio" id="male" name="gender" value="m"> Man</label>
+      <label for="female"><input type="radio" id="female" name="gender" value="f"> Vrouw</label>
+      <label for="other"><input type="radio" id="other" name="gender" value="o"> Anders</label>
+    </div>
+  </div>
+
+  <input type="email" name="email" placeholder="E-mailadres" required>
+  <input type="password" name="password" placeholder="Wachtwoord" required>
+  <input type="number" name="number" placeholder="Telefoonnummer" required>
+
+  <button type="submit">Account aanmaken</button>
+</form>
+</body>
+</html>

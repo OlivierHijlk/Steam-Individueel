@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam App Olivier</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #1b2838;
+            color: #c7d5e0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #171a21;
+            padding: 10px 20px;
+            border-bottom: 2px solid #4a5a6a;
+            width: 100%;
+        }
+
+        .navbar a {
+            color: #c7d5e0;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 5px 15px;
+        }
+
+        .navbar a:hover {
+            background-color: #4a5a6a;
+            border-radius: 5px;
+        }
+
+        .navbar .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-image: url('https://via.placeholder.com/1200x400');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+        }
+
+        .hero h1 {
+            color: white;
+            font-size: 48px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .game-section {
+            padding: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .game-section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .game-card {
+            background-color: #2a475e;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 200px;
+        }
+
+        .game-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .game-card h3 {
+            font-size: 18px;
+            padding: 10px 0;
+        }
+
+        footer {
+            background-color: #171a21;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+            border-top: 2px solid #4a5a6a;
+            width: 100%;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Steam Olivier</div>
+        <div>
+            <a href="home.html">Thuis</a>
+            <a href="friends.html">Vrienden</a>
+            <a href="library.html">Bibliotheek</a>
+            <a href="store.html">Winkel</a>
+            <a href="settings.html">Instellingen</a>
+            <a href="registreren.html">Registreren</a>
+        </div>
+    </div>
+
+    <div class="hero">
+        <h1>Ontdek de nieuwste games en aanbiedingen!</h1>
+    </div>
+
+    <div class="game-section">
+        <h2>Populaire Games</h2>
+        <div class="game-grid">
+            <div class="game-card">
+                <img src="Grand_Theft_Auto_V.png" alt="Grand Theft Auto V">
+                <h3>Grand Theft Auto V</h3>
+            </div>
+            <div class="game-card">
+                <img src="550x670.jpg" alt="FC 25">
+                <h3>FC 25</h3>
+            </div>
+            <div class="game-card">
+                <img src="Rocket_League_coverart.jpg" alt="Rocket League">
+                <h3>Rocket League</h3>
+            </div>
+            <div class="game-card">
+                <img src="Minecraft_2024_cover_art.png" alt="Minecraft">
+                <h3>Minecraft</h3>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Steam Olivier. Alle rechten voorbehouden.</p>
+    </footer>
+</body>
+</html>
